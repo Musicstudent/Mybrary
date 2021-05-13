@@ -32,6 +32,15 @@ const bookSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
     ref: 'Author'
+  },
+  publisher: {
+    type: String
+  },
+  pubPlace: {
+    type: String
+  },
+  series: {
+    type: String
   }
 })
 
